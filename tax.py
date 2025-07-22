@@ -1,4 +1,6 @@
 income = float(input("Enter your income: "))
+
+tax = 0.0
 if income <= 10000:
     tax = 0
 elif income <= 20000:
@@ -6,5 +8,14 @@ elif income <= 20000:
 else:
     tax = 10000 * 0.1 + (income - 20000) * 0.2
 
-print(f"Tax: ${tax:.2f}")
+print("Tax: $%.2f" % tax)
+
+
+
+
+ 
+
+
+
+
 
